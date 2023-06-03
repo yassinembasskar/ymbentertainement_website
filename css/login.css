@@ -1,0 +1,52 @@
+
+
+section.login {
+    margin: 40px auto;
+    width: 90%;
+    max-width:400px ;
+    background-color: #DEEFE7;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+section h1{
+    background-color: #002333;
+    color: white;
+    text-align: center;
+    border-bottom: black 1px solid;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+.login form {
+    padding: 10px;
+}
+
+.signup_container {
+    text-align: right;
+    padding: 5px;
+}
+
+.signup_container a {
+    color: #159A9C;
+    margin-right: 5px;
+}
+
+.login form div label {
+    display: block;
+    padding: 5px;
+}
+
+.login form input {
+    all: unset;
+    width: 93%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.login form input[type="submit"]{
+    background-color: #159A9C;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}

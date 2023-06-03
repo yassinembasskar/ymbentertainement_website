@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap');
+
+/*this is the standard style of everything here*/
+
+
+*{
+    font-family: "calibri", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Times New Roman', serif;
+}
+
+a{
+    color: initial;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+}
+
+.oswald_bold{
+    font-family: "oswald", sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.left_content {
+    float: left;
+}
+
+input[type="submit"]{
+    all: unset;
+    cursor: pointer;
+}
+
+
+
+/*End of the standard style*/
+/* this is the style of the header*/
+
+header{
+    position: sticky;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002333;
+    z-index: 4;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 26px;
+}
+
+.shown.icon{
+    width: 40px;
+    height:40px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#search_icon{
+    background-image: url(../img/icons/search_icon.png);
+
+}
+
+#menu_icon{
+    background-image: url(../img/icons/menu_icon.png);
+}
+
+#quit_icon{
+    background-image: url(../img/icons/x.png);
+    width: 29px;
+    height: 29px;
+    position: relative;
+    right: 0;
+    top: 5px;
+    padding: 5px;
+    margin-left: 3px;
+}
+
+.nav_menu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    z-index: 10;
+    background-color: #002333;
+    padding: 20px;
+    border-top: white 2px solid;
+}
+
+.nav_menu ul{
+    width: 100%;
+}
+
+.nav_menu ul li{
+    padding: 17px;
+    color: white;
+    text-align: center;
+    border: #002333 solid 1px;
+}
+
+form.search_form{
+    margin-bottom: 10px;
+}
+.search_article {
+    all: unset;
+    display: block;
+    width: 90%;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+
+.nav_menu ul li.active, .nav_menu ul li:hover{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* this is the style of the header in tablet mode*/
+
+@media (min-width: 600px) {
+    .search_article {
+        all: unset;
+        width: 200px;
+        display: block;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav_menu{
+        display: block;
+        background-color: #002333;
+        padding: 0px;
+        margin: 0 15px;
+        position: static;
+        border: 0px;
+    }
+
+    .nav_menu ul{
+        display: flex;
+    }
+
+    .nav_menu ul li{
+        padding: 10px;
+        margin: 5px;
+    }
+
+    #menu_icon {
+        display: none;
+    }
+}
+
+/* this is the end of the style of the header*/
+/* this is the end of the style of the header*/
+/*this is the main design*/
+
+main{
+    overflow: hidden;
+    position: relative;
+}
+
+.fix_icon{
+    position: absolute;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    padding: 2px;
+    top: 10px;
+    left: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.main_info{
+    width: 500%;
+    justify-content: space-around;
+    transition: .3s;
+}
+
+.article_info{
+    width: 100%;
+    color: white;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+    min-height: 480px;
+}
+
+main a{
+    background-size: cover;
+    height: fit-content;
+    width: 100%;
+    background-position: center;
+}
+
+main a:nth-child(1){
+    background-image: url(../img/header_exmple.jpg);
+}
+
+main a:nth-child(2){
+    background-image: url(../img/music_example.jpg);
+}
+
+main a:nth-child(3){
+    background-image: url(../img/anime_example\ \(1\).jpg);
+}
+
+main a:nth-child(4){
+    background-image: url(../img/movies_example.jpg);
+}
+
+main a:nth-child(5){
+    background-image: url(../img/tv_shows_example.jpg);
+}
+
+.article_content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    max-width: 700px;
+}
+
+.article_info h1{
+    padding-bottom: 1em;
+}
+
+.article_info p{
+    padding-bottom: 2em;
+    font-size: 17px;
+    font-family: 'Times New Roman', serif;
+}
+
+.circle{
+    width: 13px;
+    height: 13px;
+    background-size: 100%;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.active.circle {
+    background-image: url(../img/icons/filled_circle_icon.png);
+}
+
+.not_active.circle{
+    background-image: url(../img/icons/circle_icon.png);
+}
+
+.bottom_recent{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.nav_main{
+    justify-content: center;
+}
+
+/*8888888888888888888888888888*/
+/*this is the start of styling the sections*/
+
+section.cards_container {
+    margin: 5px;
+    padding: 10px;
+    max-width: 1350px;
+}
+
+
+.cards_container .head_section {
+    padding: 5px;
+    border-left: 2px solid black;
+    margin-left: 20px;
+}
+
+.articles_container a {
+    margin: 10px;
+    justify-items: center;
+}
+
+.articles_container a .mini_article{
+    background-image: url("../img/header_exmple.jpg");
+    background-size: cover;
+    border-radius: 5px;
+    background-position: center;
+}
+
+.articles_container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1000px) {
+    .articles_container{
+        justify-content: start;
+    }
+}
+
+
+.articles_container a .mini_article .article{
+    background: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    border-radius: 5px;
+    max-width: 300px;
+    color: white;
+    padding: 15px;
+    position: relative;
+    min-height: 170px;
+}
+
+.article h2{
+    font-family: "oswald", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.article .category{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    border-left: 1px white solid;
+    position: absolute;
+    bottom: 5px;
+}
+
+
+section.sign_up{
+    width: 100%;
+    background-image: url(../img/background_login.jpg);
+    background-size: cover;
+}
+
+section.sign_up form {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sign_up form div{
+    color: white;
+    padding: 5px;
+}
+
+.sign_up form div h1{
+    margin-bottom: .5em;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.sign_up form div label, .sign_upform div input {
+    padding: 5px;
+    margin: 5px;
+    display: block;
+}
+
+.sign_up form div.field input {
+    all: unset;
+    max-width: 350px;
+    width: 88%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: black;
+}
+
+div.field {
+    width: 100%;
+    max-width: 420px;
+}
+
+#btn_submit{
+    padding: 10px;
+    background-color: #159A9C;
+    color: white;
+    border-radius: 5px;
+    margin: 15px 25px;
+    cursor: pointer;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+}
+
+/*---------------------->fooooter<-------------------*/
+
+footer {
+    background-color: #002333;
+    color: white;
+}
+
+footer > div{
+    width: 100%;
+}
+
+.high_footer{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.high_footer div {
+    max-width: 500px;
+    width: 100%;
+}
+
+.high_footer .ymb_navigation ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.high_footer div h2{
+    font-size: 19px;
+    padding: 20px;
+}
+
+.high_footer .contact_us ul {
+    margin-bottom: 20px;
+}
+
+.high_footer div ul a{
+    padding: 10px;
+    flex: 1;
+    flex-basis: 50%;
+}
+
+.high_footer div ul a li {
+    color: white;
+}
+
+.high_footer .contact_us ul a{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+}
+
+.high_footer .contact_us ul a:nth-child(1) {
+    background-image: url(../img/icons/gmail.png);
+}
+
+.high_footer .contact_us ul a:nth-child(2) {
+    background-image: url(../img/icons/youtube.png);
+}
+
+.high_footer .contact_us ul a:nth-child(3) {
+    background-image: url(../img/icons/instagram_icon.png);
+}
+
+.high_footer .contact_us ul a:nth-child(4) {
+    background-image: url(../img/icons/facebook.png);
+}
+
+.high_footer .contact_us ul a:nth-child(5) {
+    background-image: url(../img/icons/twitter.png);
+}
+
+.copyrights {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px white solid;
+}
+
+
+
+

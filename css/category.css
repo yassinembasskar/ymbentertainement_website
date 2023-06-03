@@ -1,0 +1,57 @@
+.articles_container a .mini_article .article_container{
+    background: rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+}
+
+.categorie_title{
+    margin: 20px;
+    padding: 10px;
+    border-left: 2px solid black;
+}
+
+.article_container h2{
+    margin: 10px;
+    padding: 5px;
+    font-size: 27px;
+}
+
+.article_container .description {
+    padding: 10px;
+}
+
+@media  screen and (max-width: 900px) {
+    section.main{
+        flex-direction: column;
+    }
+
+    section.main section.main_articles {
+        width: 100%;
+    }
+
+    section.main aside {
+        width: 100% !important;
+    }
+    
+}
+
+section.main section {
+    width: 70%;
+}
+
+section.main aside {
+    width: 30% ;
+}
+
+aside .mini_article {
+    max-width: 300px;
+}
+
+@media only screen and (max-width: 2200px) {
+    div.list_three {
+        display: none;
+    }
+}
+

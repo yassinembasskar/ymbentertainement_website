@@ -1,0 +1,78 @@
+*::-webkit-scrollbar{
+    display: none;
+  }
+
+.admin_page {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.admin_page section h2 {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.admin_page div.table {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.titles li {
+    font-weight: 700;
+}
+
+.admin_page li{
+    border: 1px solid black;
+    width:25%;
+    text-align: center;
+    padding: 10px;
+    word-wrap: break-word;
+    max-height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+main section .table {
+    padding: 15px;
+}
+
+main section ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section ul li {
+    min-width: 200px;
+}
+
+li img {
+    width: 100%;
+}
+
+.hidden_li{
+    display: none !important;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 400px;
+}
+
+.admin_page input[type="email"], .admin_page input[type="password"], .admin_page input[type="text"], .admin_page select{
+    width: 100%;
+    padding: 5px;
+}
+
+.admin_page input[type="button"], .admin_page input[type="submit"] {
+    all: unset;
+    padding: 10px;
+    background-color: #159A9C;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
